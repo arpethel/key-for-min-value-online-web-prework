@@ -5,10 +5,10 @@ def key_for_min_value(name_hash)
   i = 0
   name_hash.each do |key, value|
     while value < value[i]
-      value
+      lowest_value = value
       i += 1
     end
-    key
+    lowest_value
   end
 
 end
